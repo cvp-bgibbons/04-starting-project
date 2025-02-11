@@ -19,11 +19,6 @@ export class UserInputComponent {
 
   //  To wire up, import 'FormsModule', include ngSubmit in html
   onSubmit() {
-    console.log('Submitted');
-    console.log(this.enteredInitialInvestment);
-    console.log(this.enteredAnnualInvestment);
-    console.log(this.enteredExpectedReturn);
-    console.log(this.enteredDuration);
 
     this.calculate.emit({
       initialInvestment: +this.enteredInitialInvestment,
